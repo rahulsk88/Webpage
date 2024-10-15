@@ -3,7 +3,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>About</title>
-        <link rel="stylesheet" href="./css/style.css">    
+        <link rel="stylesheet" href="../css/style.css">    
     </head>
 
     <body> 
@@ -19,7 +19,7 @@
                             <a href="#"> Academics </a>
                         </li>
                                         
-                    <!-- All Courses, and then specifics -->
+                    <!-- All Courses, and then what I learned (Include the textbox and learning resources)  -->
                         <li class="list-item">
                             <a href="#"> Data Stuff </a>
                         </li>
@@ -50,7 +50,7 @@
                     <div class="intro">
                         <div class="intro-img">
                             <figure class="img-holder"> 
-                                <img src="./images/photo.jpeg"> 
+                                <img src="../images/photo.jpeg"> 
                                 <!-- Need to add some resizing and some additional stuff here. Will do it later -->
                             </figure>
                         </div>
@@ -67,6 +67,54 @@
                         </div>
                     </div>
 
+                    <section class="experience">
+                        <h2>Experience</h2>
+                    
+                        <div class="experience-item">
+                            <div class="experience-details">
+                                <h3>Aercoustics<a href="#"><i class="fa fa-external-link"></i></a></h3>
+                                <h4>UTMIST Team Lead</h4>
+                                <p>Leading a team of ML devs. Improving and Deploying a model on AWS.</p>
+                            </div>
+                            <div class="experience-dates">
+                                <span>Sep 2024 – Current</span>
+                            </div>
+                        </div>
+                    
+                        <div class="experience-item">
+                            <div class="experience-details">
+                                <h3>University of Toronto</h3>
+                                <h4>Data Science Intern</h4>
+                                <p>Created predictive models and webapp.</p>
+                            </div>
+                            <div class="experience-dates">
+                                <span>May 2023 – Sep 2024</span>
+                            </div>
+                        </div>
+                    
+                        <div class="experience-item">
+                            <div class="experience-details">
+                                <h3>University of Toronto - Glare Lab <a href="#"><i class="fa fa-external-link"></i></a></h3>
+                                <h4>Statistical Consultant</h4>
+                                <p>Developed Statistical Models and inference pipeline. Created reports.</p>
+                            </div>
+                            <div class="experience-dates">
+                                <span>Sep 2023 – Apr 2024</span>
+                            </div>
+                        </div>
+
+                        <div class="experience-item">
+                            <div class="experience-details">
+                                <h3>University of Toronto - DoSS <a href="#"><i class="fa fa-external-link"></i></a></h3>
+                                <h4>Ethical Statistics Research Assistant</h4>
+                                <p>Created presentations about effective use of statistics. </p>
+                            </div>
+                            <div class="experience-dates">
+                                <span>May 2023 – Aug 2023</span>
+                            </div>
+                        </div>
+                    </section>
+
                     <div class="info-skills">
                         <div class = "card">
                             <!--  There is an error here with the centering of the text. I will fix it later -->
@@ -75,8 +123,14 @@
                                     Web Scrapping
                                 </p>
                                 
-                                <div class = "card-inner-expanded">
-                                    <a href="#"> Include techniques here </a>
+                                <div class="card-inner-expanded">
+                                    <a href="#">
+                                        <strong>Tools:</strong> Scrapy, Selenium
+                                    </a>
+                                    <br>
+                                    <a href="#">
+                                        <strong>Techniques:</strong> HTML parsing, HTTP request handling, automated browser interaction
+                                    </a>
                                 </div>
                             </div>
                             <div class="card-inner-expand">
@@ -84,8 +138,14 @@
                                     APIs
                                 </p>
 
-                                <div class = "card-inner-expanded">
-                                    <a href="#"> Include techniques here </a>
+                                <div class="card-inner-expanded">
+                                    <a href="#">
+                                        <strong>Tools:</strong> REST, GraphQL
+                                    </a>
+                                    <br>
+                                    <a href="#">
+                                        <strong>Techniques:</strong> CronJob scheduling, data orchestration
+                                    </a>
                                 </div>
 
                             </div>
@@ -94,18 +154,31 @@
                                     Databases
                                 </p>
 
-                                <div class = "card-inner-expanded">
-                                    <a href="#"> Include techniques here </a>
+                                <div class="card-inner-expanded">
+                                    <a href="#">
+                                        <strong>Tools:</strong> SQL, MongoDB, Firebase
+                                    </a>
+                                    <br>
+                                    <a href="#">
+                                        <strong>Techniques:</strong> Query optimization, database indexing, schema design
+                                    </a>
                                 </div>
                             </div>
                             <div class="card-inner-expand">
                                 <p>
                                     Cloud Services
                                 </p>
+
+                            <div class="card-inner-expanded">
+                                <a href="#">
+                                    <strong>Tools:</strong> Azure, AWS
+                                </a>
+                                <br>
+                                <a href="#">
+                                    <strong>Techniques:</strong> Cloud resource provisioning, scalable architecture, serverless computing
+                                </a>
                             </div>
-                            <div class = "card-inner-expanded">
-                                <a href="#"> Include techniques here </a>
-                            </div>
+                        </div>
                             <div class="section-title">
                                 <h3>
                                     Data Collection
@@ -119,25 +192,42 @@
                                     Data Cleaning
                                 </p>
 
-                                <div class = "card-inner-expanded">
-                                    <a href="#"> Include techniques here </a>
+                                <div class="card-inner-expanded">
+                                    <a href="#">
+                                        <strong>Tools:</strong> Pandas, Polars, Tidyverse
+                                    </a>
+                                    <br>
+                                    <a href="#">
+                                        <strong>Techniques:</strong> Handling missing data, removing duplicates, outlier detection, data normalization
+                                    </a>
                                 </div>
                             </div>
                             <div class="card-inner-expand">
                                 <p>
                                     Dimensionality reduction
                                 </p>
-
-                                <div class = "card-inner-expanded">
-                                    <a href="#"> Include techniques here </a>
+                                <div class="card-inner-expanded">
+                                    <a href="#">
+                                        <strong>Tools:</strong> PCA, t-SNE, LDA
+                                    </a>
+                                    <br>
+                                    <a href="#">
+                                        <strong>Techniques:</strong> Feature selection, variance thresholding, reducing dataset complexity
+                                    </a>
                                 </div>
                             </div>
                             <div class="card-inner-expand">
                                 <p>
                                     Textual Data
                                 </p>
-                                <div class = "card-inner-expanded">
-                                    <a href="#"> Include techniques here </a>
+                                <div class="card-inner-expanded">
+                                    <a href="#">
+                                        <strong>Tools:</strong> NLTK, SpaCy, HuggingFace Transformers
+                                    </a>
+                                    <br>
+                                    <a href="#">
+                                        <strong>Techniques:</strong> Tokenization, Stemming, Lemmatization, Named Entity Recognition 
+                                    </a>
                                 </div>
                                 
                             </div>
@@ -146,8 +236,14 @@
                                     Signal Processing
                                 </p>
 
-                                <div class = "card-inner-expanded">
-                                    <a href="#"> Include techniques here </a>
+                                <div class="card-inner-expanded">
+                                    <a href="#">
+                                        <strong>Tools:</strong> SciPy, NumPy
+                                    </a>
+                                    <br>
+                                    <a href="#">
+                                        <strong>Techniques:</strong> Fourier transforms, filtering, signal feature extraction
+                                    </a>
                                 </div>
                             </div>
                             <div class="section-title">
@@ -171,8 +267,14 @@
                                     Data Visualization
                                 </p>
 
-                                <div class = "card-inner-expanded">
-                                    <a href="#"> Include techniques here </a>
+                                <div class="card-inner-expanded">
+                                    <a href="#">
+                                        <strong>Tools:</strong> Matplotlib, Seaborn, Plotly, ggplot2, PowerBI
+                                    </a>
+                                    <br>
+                                    <a href="#">
+                                        <strong>Techniques:</strong> Static Visualizations, Interactive Visualizations
+                                    </a>
                                 </div>
                             </div>
                             <div class="card-inner-expand">
@@ -180,8 +282,14 @@
                                     Correlation Analysis
                                 </p>
 
-                                <div class = "card-inner-expanded">
-                                    <a href="#"> Include techniques here </a>
+                                <div class="card-inner-expanded">
+                                    <a href="#">
+                                        <strong>Tools:</strong> Pandas, SciPy, Statsmodels
+                                    </a>
+                                    <br>
+                                    <a href="#">
+                                        <strong>Techniques:</strong> Pearson/Spearman correlation, chi-squared test, covariance matrix analysis
+                                    </a>
                                 </div>
                             </div>
                             <div class="card-inner-expand">
@@ -189,8 +297,14 @@
                                     Anomaly Detection
                                 </p>
 
-                                <div class = "card-inner-expanded">
-                                    <a href="#"> Include techniques here </a>
+                                <div class="card-inner-expanded">
+                                    <a href="#">
+                                        <strong>Tools:</strong> Scikit-learn, PyOD, Isolation Forest
+                                    </a>
+                                    <br>
+                                    <a href="#">
+                                        <strong>Techniques:</strong> Outlier detection, one-class SVM, clustering-based anomaly detection
+                                    </a>
                                 </div>
                             </div>
                             <div class="section-title">
@@ -202,38 +316,61 @@
                         <div class = "card">
                             <div class="card-inner-expand">
                                 <p>
-                                    Predictive Method
+                                    Predictive Methods
                                 </p>
 
-                                <div class = "card-inner-expanded">
-                                    <a href="#"> Include techniques here </a>
+                                <div class="card-inner-expanded">
+                                    <a href="#">
+                                        <strong>Tools:</strong> Scikit-learn, XGBoost, LightGBM
+                                    </a>
+                                    <br>
+                                    <a href="#">
+                                        <strong>Techniques:</strong> Linear regression, decision trees, random forests, ensemble methods
+                                    </a>
                                 </div>
                             </div>
                             <div class="card-inner-expand">
                                 <p> 
-                                    Inference Method
+                                    Inference Methods
                                 </p>
-
-                                <div class = "card-inner-expanded">
-                                    <a href="#"> Include techniques here </a>
+                                <div class="card-inner-expanded">
+                                    <a href="#">
+                                        <strong>Tools:</strong> PyMC3, Statsmodels
+                                    </a>
+                                    <br>
+                                    <a href="#">
+                                        <strong>Techniques:</strong> Bayesian inference, Maximum Likelihood Estimation, Markov Chain Monte Carlo, Variational Inference
+                                    </a>
                                 </div>
                             </div>
                             <div class="card-inner-expand">
                                 <p> 
-                                    Experimental Method
+                                    Experimental Methods
                                 </p>
 
-                                <div class = "card-inner-expanded">
-                                    <a href="#"> Include techniques here </a>
+                                <div class="card-inner-expanded">
+                                    <a href="#">
+                                        <strong>Tools:</strong> A/B testing frameworks, SciPy
+                                    </a>
+                                    <br>
+                                    <a href="#">
+                                        <strong>Techniques:</strong> A/B testing, Hypothesis Testing, Statistical Power Analysis
+                                    </a>
                                 </div>
                             </div>
                             <div class="card-inner-expand">
                                 <p>
-                                    Deep Learning
+                                    Deep Learning Methods
                                 </p>
 
-                                <div class = "card-inner-expanded">
-                                    <a href="#"> Include techniques here </a>
+                                <div class="card-inner-expanded">
+                                    <a href="#">
+                                        <strong>Tools:</strong> PyTorch, Cuda
+                                    </a>
+                                    <br>
+                                    <a href="#">
+                                        <strong>Techniques:</strong> Graph Neural Networks, Transformers  
+                                    </a>
                                 </div>
                             </div>
                             <div class="section-title">
@@ -248,8 +385,14 @@
                                     Deployment
                                 </p>
 
-                                <div class = "card-inner-expanded">
-                                    <a href="#"> Include techniques here </a>
+                                <div class="card-inner-expanded">
+                                    <a href="#">
+                                        <strong>Tools:</strong> Docker, Kubernetes
+                                    </a>
+                                    <br>
+                                    <a href="#">
+                                        <strong>Techniques:</strong> Containerization, CI/CD pipelines, scalable deployments
+                                    </a>
                                 </div>
                             </div>
                             <div class="card-inner-expand">
@@ -257,8 +400,14 @@
                                     Reports
                                 </p> 
 
-                                <div class = "card-inner-expanded">
-                                    <a href="#"> Include techniques here </a>
+                                <div class="card-inner-expanded">
+                                    <a href="#">
+                                        <strong>Tools:</strong> Jupyter Notebooks, Markdown, Power BI, Tableau
+                                    </a>
+                                    <br>
+                                    <a href="#">
+                                        <strong>Techniques:</strong> Automated reporting, Interactive Visualizations
+                                    </a>
                                 </div>
                             </div>
                             <div class="card-inner-expand">
@@ -266,8 +415,14 @@
                                     Websites
                                 </p>
 
-                                <div class = "card-inner-expanded">
-                                    <a href="#"> Include techniques here </a>
+                                <div class="card-inner-expanded">
+                                    <a href="#">
+                                        <strong>Tools:</strong> Javascript, CSS, HTML, Flask, Django
+                                    </a>
+                                    <br>
+                                    <a href="#">
+                                        <strong>Techniques:</strong> API creation, Web hosting
+                                    </a>
                                 </div>
                             </div>
                             <div class="card-inner-expand">
@@ -278,16 +433,6 @@
                                 <div class = "card-inner-expanded">
                                     <a href="#"> Include techniques here </a>
                                 </div>
-                            </div>
-                            <div class="card-inner-expand">
-                                <p>
-                                    Documentation
-                                </p>
-                            </div>
-                            <div class="card-inner-expand">
-                                <p>
-                                    Version Control
-                                </p>
                             </div>
                             <div class="section-title">
                                 <h3>
@@ -302,7 +447,7 @@
                         <!-- This should contain some more info about me. My interests 
                          and hobbies. Some pictures and stuff.  -->
                          <div class="info-dense-heading"> 
-                            <h1 class="info-dense-title">
+                            <h1 class="info-dense-title"> 
                                 Some more stuff about me:
                             </h1>
                         </div>
@@ -310,36 +455,46 @@
                     
                         <div class="info-dense-text">
                             <p>
-                                I like working with data because there always an opportunity to learn and do more. I love the process of learning, trying and failing and
-                                data analysis and science always provides me with this. As evidenced by this website, I've also started to explore other data-adjacent domains
-                                such as web design and some light game dev as well; although these are purely for fun. 
+                                I love working with data because there's always something new to learn and explore. For me, it's all about the journey—learning, experimenting, sometimes failing, but always growing. Data analysis and science give me that constant sense of discovery. Lately, I’ve been dipping my toes into other creative areas like web design and even a bit of game development, just for fun. It’s all part of my curiosity to try new things and see where they take me, as you can probably tell from this website!
                             </p>
     
                             <p>   
-                                Outside of working and studying, I love the outdoors (check out the pictures I've taken below!) and exploring cities. And like many
-                                other students, I love a fine glass of coffee in a parisian-esque cafe. I also like exploring new music and trying my best to emulate it
-                                on my guitar and also trying to win at Chess. Finally, I am obsessed with understanding how public transit and urban planning can imrpove cities on the local level 
+                                When I'm not working or studying, you’ll likely find me outdoors, soaking in nature (check out some of the photos I’ve taken below!). Like many students, I have a soft spot for a good cup of coffee, preferably in a cozy, Parisian-style café. I also love discovering new music and attempting to play it on my guitar, and when I’m not doing that, I’m probably trying to avoid losing to someone in chess. Lately, I've become fascinated by how public transit and urban planning can transform cities at a local level—it’s something I can’t stop reading about! 
                                 (check out <a href="https://www.youtube.com/@NotJustBikes"> Not Just Bikes </a>). 
                             </p>
 
-                            <p>
-                                If you want to message me on my socials:
-                                <!-- Include links to my socials here.  -->
-                            </p>
+
                                 
                             
                         </div>
                     </div>
-                </div>
-                <!-- Lets add social media links instead -> linkedin, Github -->
 
-                <!-- Timeline -->
+
+                <div class="carousel-photo-holder">
+                    <div class ="carousel-photo-1"> 
+                        
+                    </div>
+                    <div class="carousel-photo-2">
+
+                    </div>
+                </div>
+
+                <footer class="contact-section">
+                    <h2>Reachout</h2>
+                    <div class="contact-info">
+                        <p>Email: <a href="mailto:r.selvakumar@mail.utoronto.ca">r.selvakumar@mail.utoronto.ca</a></p>
+                    </div>
+                </footer>
+
+
+            </div>
+            
             
             </main>
         </div>
         <div class="overlay" id="overlay"></div>
 
-    <script src="./js/main.js"></script>
+    <script src="../js/main.js"></script>
     </body>
 
 </html>

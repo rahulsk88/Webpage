@@ -8,7 +8,6 @@
     --px42: 2.652rem;
     --spacing-l: max(var(--px42), calc(var(--px42) +(84 - 42)*((100vw - 375px) /(1600 - 375))));
     --background-color-cards: hsla(160, 52%, 71%, .05);
-
 }
 
 body 
@@ -18,7 +17,21 @@ body
     font-family: var(--bodyfont);
     font-size: 16px;
     overflow-x: hidden;
-    background: hsla(158, 23%, 18%, 1);
+    background: linear-gradient(135deg, #6b3cf77a, #005effbb);
+    background-size: 800% 800%;
+    animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 80% 50%;
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 header.main-header {
@@ -59,17 +72,11 @@ nav.main-nav-bar {
     list-style-type: none;
     padding: 0;
     margin: 0; 
-    background: hsla(160, 27%, 24%, 0.7);
-    backdrop-filter: blur(20px) saturate(1.7);
-    border-radius: 20px;
-
-
-
-    
+    backdrop-filter: blur(20px) saturate(1.7) brightness(0.8);
+    border-radius: 20px;   
 }
 
 .list-item {
-    
     margin: 0 15px;
     padding: 10px 5px;
     border-radius: 50px;
@@ -79,14 +86,10 @@ nav.main-nav-bar {
     transition: all 0.3s linear;
 }
 
-
-    
-
 .list-item a {
     font-family: clamp(.875rem, .7985rem + .3265vw, 1.125rem);
     font-weight: bold;
     text-decoration: none;
-
 }
 
 main.about-page {
@@ -100,10 +103,9 @@ main.about-page {
     position: relative;
     z-index: 10;
     width: 100%;
-    height: 100%;
+    height: 275%;
     box-sizing: border-box;
 }
-
 
 h1 {
     font-family: var(--bodyfont);
@@ -125,11 +127,11 @@ h1 {
     max-width: var(--max-width);
     margin: auto;
     width: 100%;
+    height: auto;
     grid-template-columns: repeat(25, 1fr);
-    margin-bottom: var(--spacing-l);
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 0px;
 }
 
 .intro-img {
@@ -168,15 +170,13 @@ h1 {
     flex-shrink: 1;
     text-align: left;
     grid-column-start: 13;
-
-
+    padding: 0px 0px 10px 0px;
 }
 
 
 .intro-description h2 {
     margin: 50px;
     font-size: 1.8rem;
-    color: var(--background-primary-colour);
 }
 
 
@@ -193,6 +193,69 @@ h1 {
     color: var(--background-primary-colour);
 }
 
+.experience {
+    margin: 40px auto;
+    padding: 0 20px;
+    max-width: 800px;
+    font-family: 'Arial', sans-serif;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.experience-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.experience-details h3 {
+    font-size: 1.3em;
+    margin: 0;
+    font-weight: bold;
+}
+
+.experience-details h4 {
+    font-size: 1.1em;
+    color: var(--background-primary-colour);
+    margin: 5px 0;
+}
+
+.experience-details p {
+    margin: 10px 0;
+    color: var(--background-primary-colour);
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.experience-dates {
+    color: var(--background-primary-colour);
+    font-size: 0.95em;
+    text-align: right;
+    white-space: nowrap; /* Keeps dates on one line */
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .experience-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .experience-dates {
+        text-align: left;
+        margin-top: 10px;
+    }
+}
 
 .info-skills {
     margin: 20px 75px;
@@ -201,13 +264,11 @@ h1 {
     text-align: center;
     border-radius: 15px;
     justify-content: center;
-    gap: 20px;
     padding: 20px;
     font-family: var(--bodyfont);
     color: var(--color-text-primary);
     background: var(--background-color-cards);
-    backdrop-filter: blur(100px) saturate(1.3);
-
+    backdrop-filter: blur(20px) saturate(1.2) brightness(0.9) ;
 }
 
 .card {
@@ -218,8 +279,6 @@ h1 {
     height: auto;
     justify-content: space-around;
     position: relative;
-
-
 }
 
 .card-inner-expand {
@@ -230,7 +289,7 @@ h1 {
     flex: 1;
     font-family: var(--bodyfont);
     color: white;
-    backdrop-filter: blur(100px) saturate(1.3);
+    backdrop-filter: blur(100px) saturate(1.1) ;
     height: 75px;
     justify-content: center;
     position: relative
@@ -241,13 +300,12 @@ h1 {
     transition: all 0.1s ease-in-out;
 }
 
-
 .section-title {
     text-align: center;
     font-weight: bold;
     width: 100%;
     font-family: var(--bodyfont);
-    color: hsla(160, 52%, 71%, 1);
+    color: var(--background-primary-colour);
 }
 
 .card-inner-expanded {
@@ -295,25 +353,93 @@ h1 {
     position: absolute;
     max-height: 200px;
     transition: all 0.3s ease-in-out;   
-
 }
-
 
 a {
     color: white;
     text-decoration: none;
-
-
 }
 
 .info-dense {
-    position: center;
+    text-align: center; 
+    max-width: 800px;    
+    margin: 0 auto;     
+    padding: 40px 20px;  
 }
 
 .info-dense-text {
-    margin: 0px 100px  100px 100px;
+    margin: 0 20px;    
+    line-height: 1.6;   
 }
 
 .info-dense-text p {
-    color:rgb(137, 237, 204);
+    color: #f1f1f1;    
+    font-size: 1.1em;   
+    margin-bottom: 20px; 
+}
+
+@media (max-width: 768px) {
+    .info-dense {
+        padding: 20px;   
+    }
+
+    .info-dense-text {
+        margin: 0 10px;  
+    }
+}
+
+.carousel-photo-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px; 
+    padding: 0px 64px 64px 0px;
+    margin-bottom: 64px;
+    flex-wrap: wrap; 
+}
+
+.carousel-photo-1 {
+    width: 900px;  
+    height: 600px; 
+    background-size: cover;
+    /* background-position: center; */
+    border-radius: 10px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}
+
+.carousel-photo-2 {
+    width: 425px;  
+    height: 600px; 
+    background-size: cover;
+    /* background-position: center; */
+    border-radius: 10px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+
+}
+
+.contact-section {
+    color: #f1f1f1;             /* Light text color */
+    text-align: center;
+    padding: 40px 20px;
+    backdrop-filter: blur(200px); 
+
+}
+
+.contact-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #4db8ff;   /* Email link color */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
 }

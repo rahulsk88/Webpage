@@ -1,5 +1,3 @@
-
-
 document.addEventListener("DOMContentLoaded",  () => {
     
     const ul_bar = document.querySelector(".main-list");
@@ -14,11 +12,6 @@ document.addEventListener("DOMContentLoaded",  () => {
         }
     })
 
-
-    
-    
-    
-    
     const infoCard = document.querySelectorAll('.card-inner-expand');
     const overlay = document.getElementById('overlay');
 
@@ -29,9 +22,7 @@ document.addEventListener("DOMContentLoaded",  () => {
 
     infoCard.forEach(element => {
         element.addEventListener('click', () => {
-
             const childCard =  element.querySelector('.card-inner-expanded')
-            
             if (childCard) {
                 overlay.innerHTML = '';
                 overlay.appendChild(childCard.cloneNode(true));
@@ -45,5 +36,20 @@ document.addEventListener("DOMContentLoaded",  () => {
     overlay.addEventListener('click', () => {
         overlay.classList.remove('active');
     });
+
+
+    function setRandomImage() {
+        const TotalImagesPotrait = 19;
+        const TotalImageLandscape = 12
+
+        const randomImage1 = Math.floor(Math.random() * TotalImagesPotrait) + 1;
+        const randomImage2 = Math.floor(Math.random() * TotalImageLandscape) + 1;
+
+
+        document.querySelector('.carousel-photo-1').style.backgroundImage = `url('../images/landscape/photo${randomImage2}.jpg')`;
+        document.querySelector('.carousel-photo-2').style.backgroundImage = `url('../images/potrait/photo${randomImage1}.jpg')`;
+    }
+
+    window.onload = setRandomImage;
 })
 
